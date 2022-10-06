@@ -1,0 +1,37 @@
+print("Hello world")
+
+#zad 1
+def funkcja(litera,nazwisko):
+    return litera[0]+"."+nazwisko
+
+print(funkcja("Jan","Kowalski"))
+
+#zad2
+def funkcja2(litera,nazwisko):
+    pom = litera[0].upper()
+    return pom+"."+nazwisko.title()
+
+print(funkcja2("jan","kowalski"))
+
+#zad3
+def funkcja3(pierwsze,ostatnie,wiek):
+    pom = str(pierwsze)
+    temp = str(ostatnie)
+    x = pom + temp
+    y = int(x)
+    return y - wiek
+
+print(funkcja3(20,22,53))
+#zad4
+
+def funkcja4(imie,nazwisko,funkcja):
+    return funkcja2(imie,nazwisko)
+
+print(funkcja2("Jakub","Krajewski"))
+#zad 5
+def funkcja5(licznik,mianownik):
+    if mianownik == 0:
+        return "Nie wolno dzielic przez 0"
+    return licznik/mianownik
+print(funkcja5(20,5))
+print(funkcja5(23,0))
